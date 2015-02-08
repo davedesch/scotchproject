@@ -3,9 +3,14 @@
 </div>
 
 <div class="scotch_review">
-<h1><%= @scotch.distillery %></h1>
-<p><img src="<%= @scotch.img_url %>" height="300"/></p>
-<p><%= @scotch.tasting_notes %><p>
+  <% @scotch.each do |scotch| %>
+<h1><%= scotch.distillery %> <%= scotch.age %></h1>
+<p><img src="<%= scotch.img_url %>" height="300"/></p>
+<p><%= scotch.tasting_notes %></p>
+<p>ABV <%= scotch.abv %>%</p>
+<p><form action="/<%= scotch.id %>/add_review" method="post" ><button>Add a Review</button></form></p>
+  <% end %>
+
 </div>
 
 
