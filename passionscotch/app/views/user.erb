@@ -1,1 +1,7 @@
-<h1>Hi, <%= @user.name %> !</h1>
+<h1>Hi, <%= @user.name %>!</h1>
+<h2>Here are some of your latest reviews</h2>
+<p><% @reviews.each do |review| %><br>
+  <%= review.scotch.distillery %> <%= review.scotch.age %><br>
+  <img src="<%= review.scotch.img_url %>" height="300"><br>
+  <%= review.review %></p>
+  <% end %>

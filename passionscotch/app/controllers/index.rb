@@ -33,5 +33,6 @@ end
 
 get '/:user' do
   @user = User.find(session[:user_id])
+  @reviews = Review.where(user_id: session[:user_id])
   erb :user
 end
