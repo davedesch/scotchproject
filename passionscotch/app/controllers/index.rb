@@ -36,3 +36,9 @@ get '/:user' do
   @reviews = Review.where(user_id: session[:user_id])
   erb :user
 end
+
+get '/:user/wishlist' do
+  @user = User.find(session[:user_id])
+  @wishlist = Wishlist.where(user_id: session[:user_id])
+  erb :wishlist
+end

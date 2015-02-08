@@ -1,0 +1,7 @@
+<h1>Hi, <%= @user.name %>!</h1>
+<h2>Here are some scotches you'd like to try</h2>
+<p><% @wishlist.each do |scotch| %><br>
+  <%= scotch.scotch.distillery %> <%= scotch.scotch.age %><br>
+  <img src="<%= scotch.scotch.img_url %>" height="300"><br>
+  <%= scotch.comments %></p>
+  <% end %>
