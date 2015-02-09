@@ -1,30 +1,16 @@
-<body>
-<div ="login">
+
+<div class="container">
+
+  <div class="login">
   <%= @login_error %>
   <h2>Login to see your reviews!</h2>
-<form action="/login" method="post">
-  Email:<br> <input type="text" name="email"><br>
-  Password: <br><input type="password" name="password" ><br>
-  <input type="submit">
+<form action="/login" method="post"><div class="input_form"><img src="https://gs1.wac.edgecastcdn.net/8019B6/data.tumblr.com/tumblr_lh7dtoq5S21qdf2loo1_400.gif" alt="Login Picture" width="150"><br>
+  Email:<br><input type="text" name="email"><br>
+  Password:<br><input type="password" name="password"><br>
+  <input type="submit"></div>
 </form>
-
 </div>
-<br><br><br><br>
-<div ="register">
-  <h2> Let's get you registered.</h2>
-  <form action="/register" method="POST">
-Username:<br>
-<input type="text" name="username">
-<br><br>
-Email:<br>
-<input type="text" name="email">
-<br><br>
-Password:<br>
-<input type="text" name="password">
-<br><br>
-Name: <br><input type="text" name="name"><br><br>
-<input type="submit" value="Register!">
-
 </div>
 
-</body>
+
+

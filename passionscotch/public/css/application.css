@@ -1,0 +1,95 @@
+body {
+  background-color: #374A46;
+}
+
+.container {
+  /* width: 25%; */
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+
+}
+
+.logout_button {
+  display: block;
+  float: right;
+  position: relative;
+  /* font-family: 'Alegreya Sans SC', sans-serif; */
+  /* margin-right: 0px; */
+}
+
+.buttons_not_named_logout {
+  display: inline-block;
+  float: left;
+  /* font-family: 'Alegreya Sans SC', sans-serif; */
+  align-items: left;
+}
+
+button {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  
+  border-top: 1px solid;
+  padding: 0px 25px;
+  color: black;
+  background-color: ghostwhite;
+  border-radius: 5px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.each_scotch {
+  font-family: 'Marcellus SC', serif;
+  text-align: center;
+  margin-top: 50px;
+
+  border-style: double;
+  background-color: white;
+  padding: 2%;
+  /* width: 50%; */
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+img {
+  margin: auto;
+}
+
+.scotch_title {
+font-size: x-large;
+/* font-style: oblique; */
+font-weight: 700;
+}
+
+nav {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: x-large;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: -43px;
+  /* border: dodgerblue; */
+  border: 2px solid black;
+  margin-bottom: 95px;
+  /* background-color: rgb(78, 87, 47); */
+  /* display: block; */
+}
+
+.login{
+    font-family: 'Fenix', serif;
+  
+    border-style: double;
+    border-color: black;
+    margin-left: 30%;
+    /* margin-right: auto; */
+    margin-right: 30%;
+    background-color: white;
+    padding: 65px;
+}
+
+.input_form {
+  text-align: center;
+  
+  /* margin: 2%; */
+  padding: -3%;
+}

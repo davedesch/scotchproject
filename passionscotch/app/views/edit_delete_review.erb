@@ -1,4 +1,5 @@
-
+<div class="container">
+  <div class="each_scotch">
 <h1><%= @review.scotch.distillery %> <%= @review.scotch.age %></h1>
 <p><img src="<%= @review.scotch.img_url %>" height="300"/></p>
 <p><%= @review.scotch.tasting_notes %></p>
@@ -12,4 +13,5 @@
   <textarea name="review" cols=40 rows=4><%= @review.review %>
 </textarea><br><br>
 <input type="submit" value="Submit Revisions"></form>
-<p><form action="/delete_review" method="post"><button>Delete Review</button><p>
+<p><form action="/delete_review" method="post"><div class="unspecial_button"><button>Delete Review</button></div><p>
+</div></div>

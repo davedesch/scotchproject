@@ -12,6 +12,8 @@
   -->
   <link rel="stylesheet" href="/css/application.css">
 
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Marcellus+SC|Fenix|Abel' rel='stylesheet' type='text/css'>
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
@@ -19,11 +21,11 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="later">Test</a>
-      <a href="america">Test2</a>
-      <a href="once more">logout or something</a>
-      <a href="hell yeah">chyea</a>
+    <nav class="vertical"><div class="buttons_not_named_logout">
+      <a href="/reviews"><button>View All Scotches</button></a>
+      <a href="/<%= @user.username %>"><button>My Reviews</button></a>
+      <a href="/<%= @user.username %>/wishlist"><button>Wishlist</button></a></div>
+      <div class="logout_button"><a href="/logout"><button>Logout</button></a></div>
     </nav>
   </header>
   <%= yield %>

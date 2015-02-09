@@ -1,11 +1,13 @@
-<form action="/<%= @user.username %>" method="get"><button>Back to your Reviews</button></form>
 
-<h1>Hi, <%= @user.name %>!</h1>
-<h2>Here are some scotches you'd like to try</h2>
-<p><% @wishlist.each do |scotch| %><br>
-  <%= scotch.scotch.distillery %> <%= scotch.scotch.age %><br>
+
+
+<div class="container">
+<div class="header"><h1>Hi, <%= @user.name %>!</h1>
+<h2>Here are some scotches you'd like to try</h2></div></div>
+<p><% @wishlist.each do |scotch| %><br><div class="each_scotch">
+  <div class="scotch_title"><%= scotch.scotch.distillery %> <%= scotch.scotch.bottling_name %> <%= scotch.scotch.age %></div><br>
   <img src="<%= scotch.scotch.img_url %>" height="300"><br>
   <%= scotch.comments %></p>
-  <% end %>
+  </div><% end %>
 
-   <form action="/logout" method="get"><button>Logout</button></form>
+
