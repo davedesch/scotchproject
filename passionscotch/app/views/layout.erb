@@ -26,9 +26,9 @@
       <a href="/wishlist"><button>View Your Wishlist</button></a>
       <a href="/user" %><button>View Your Reviews</button></a>
 <% if logged_in? %>
-  <a href="/login"><button>Login</button></a>
-  <% else %>
       <div class="logout_button"><a href="/logout"><button>Logout</button></a></div>
+  <% else %>
+  <a href="/login"><button>Login</button></a>
   <% end %>
     </nav>
   </header>

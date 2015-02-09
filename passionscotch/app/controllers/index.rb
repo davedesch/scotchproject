@@ -34,6 +34,8 @@ get '/reviews' do
 end
 
 
+
+
 get '/logout' do
   logout_user = session[:user_id]
   session[:user_id] = nil
