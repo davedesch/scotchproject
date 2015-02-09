@@ -1,9 +1,11 @@
+<form action="/reviews" method="get"><button>View All Reviews</button></form>
+
 <h1>Hi, <%= @user.name %>!</h1>
 <h2>Here are some of your latest reviews</h2>
 <p><% @reviews.each do |review| %><br>
   <%= review.scotch.distillery %> <%= review.scotch.age %><br>
-  <img src="<%= review.scotch.img_url %>" height="300"><br>
-  <%= review.review %><form action="/<%= review.id %>/edit_review" method="get"><button>Edit Review</button></form></p>
+  <img src="<%= review.scotch.img_url %>" height="300"><br>Your Rating: <%= review.ranking %><br>
+  <%= review.review %><form action="/<%= review.id %>/edit_review" method="get"><button>Edit/Delete Review</button></form></p>
   <% end %>
-
+  <form action="/<%= @user.username %>/wishlist" method="get"><button>View Your Wishlist</button></form>
   <form action="/logout" method="get"><button>Logout</button></form>

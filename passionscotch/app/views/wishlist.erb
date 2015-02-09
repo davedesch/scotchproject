@@ -1,3 +1,5 @@
+<form action="/<%= @user.username %>" method="get"><button>Back to your Reviews</button></form>
+
 <h1>Hi, <%= @user.name %>!</h1>
 <h2>Here are some scotches you'd like to try</h2>
 <p><% @wishlist.each do |scotch| %><br>
@@ -5,3 +7,5 @@
   <img src="<%= scotch.scotch.img_url %>" height="300"><br>
   <%= scotch.comments %></p>
   <% end %>
+
+   <form action="/logout" method="get"><button>Logout</button></form>

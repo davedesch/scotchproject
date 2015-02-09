@@ -5,4 +5,5 @@ class Review < ActiveRecord::Base
 
 
   validates :review, presence: true
+  # validates :ranking, greater_than: 0, less_than_or_equal_to: 100
 end

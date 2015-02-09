@@ -1,3 +1,4 @@
+<%= @errors %>
 <h1>Add a review</h1>
 <h1><%= @scotch.distillery %> <%= @scotch.age %></h1>
 <p><img src="<%= @scotch.img_url %>" height="300"/></p>
@@ -7,7 +8,7 @@
 <h2>So <%= @user.name %>, what did you think?</h2>
 <form action="/add_review" method="post">
   <br>Rating (1 through 100)<br>
-  <input type="text" name="rating">
+  <input type="number" name="rating">
   <br><br>Your Review<br><p><%= @errors %>
   <textarea name="review" cols=40 rows=4>
 </textarea><br><br>
