@@ -14,7 +14,7 @@
   </div>
     <img src="<%= review.scotch.img_url %>" height="300"><br>
     Your Rating: <%= review.ranking %><br>
-    <%= review.review %>
+    <div class="readable_review_text"><%= review.review %></div>
     <form action="/<%= review.id %>/edit_review" method="get"><button>Edit/Delete Review</button></form>
     </div><% end %>
 
