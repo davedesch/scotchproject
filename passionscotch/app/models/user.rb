@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
 
   include BCrypt
 
+  validates :email, presence: true
+
   def password
     @password ||= Password.new(password_hash)
   end

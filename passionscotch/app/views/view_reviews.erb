@@ -1,0 +1,11 @@
+<div class="scotch_review">
+<h1><%= @scotch.distillery %> <%= @scotch.age %></h1>
+<p><img src="<%= @scotch.img_url %>" height="300"/></p>
+<p><%= @scotch.tasting_notes %></p>
+<p>ABV <%= @scotch.abv %>%</p>
+<% @review.each do |review| %>
+<p>Score: <%= review.ranking %></p>
+
+<p>Review from <%= review.user.username %><br>
+<%= review.review %></p>
+<% end %>

@@ -1,0 +1,14 @@
+
+<h1><%= @review.scotch.distillery %> <%= @review.scotch.age %></h1>
+<p><img src="<%= @review.scotch.img_url %>" height="300"/></p>
+<p><%= @review.scotch.tasting_notes %></p>
+<p>ABV <%= @review.scotch.abv %>%</p>
+
+
+<form action="/edit_review" method="post">
+  <br>Revise your rating<br>
+  <input type="text" name="rating" value="<%= @review.ranking %>">
+  <br><br>Revise your review<br>
+  <textarea name="review" cols=40 rows=4><%= @review.review %>
+</textarea><br><br>
+<input type="submit" value="Submit Revisions"></form>

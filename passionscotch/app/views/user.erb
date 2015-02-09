@@ -3,5 +3,7 @@
 <p><% @reviews.each do |review| %><br>
   <%= review.scotch.distillery %> <%= review.scotch.age %><br>
   <img src="<%= review.scotch.img_url %>" height="300"><br>
-  <%= review.review %></p>
+  <%= review.review %><form action="/<%= review.id %>/edit_review" method="get"><button>Edit Review</button></form></p>
   <% end %>
+
+  <form action="/logout" method="get"><button>Logout</button></form>

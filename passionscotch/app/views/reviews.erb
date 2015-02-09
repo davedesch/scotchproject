@@ -8,7 +8,12 @@
 <p><img src="<%= scotch.img_url %>" height="300"/></p>
 <p><%= scotch.tasting_notes %></p>
 <p>ABV <%= scotch.abv %>%</p>
-<p><form action="/<%= scotch.id %>/add_review" method="post" ><button>Add a Review</button></form></p>
+<p>
+  <form action="/<%= scotch.id %>/add_review" method="post" ><button>Add a Review</button></form>
+  <form action="/<%= scotch.id %>/view_reviews" method="post"><button>View Reviews</button></form><br>
+  <form action="/<%= scotch.id %>/add_to_wishlist" method="post" ><br> Why do you want to try this?<br><textarea name="comment" cols=40 rows=4>
+</textarea><br><button>Add to Wishlist!</button></form>
+</p>
   <% end %>
 
 </div>

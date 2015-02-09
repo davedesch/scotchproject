@@ -1,14 +1,14 @@
 <h1>Add a review</h1>
-<h1><%= @drink.distillery %> <%= @drink.age %></h1>
-<p><img src="<%= @drink.img_url %>" height="300"/></p>
-<p><%= @drink.tasting_notes %></p>
-<p>ABV <%= @drink.abv %>%</p>
+<h1><%= @scotch.distillery %> <%= @scotch.age %></h1>
+<p><img src="<%= @scotch.img_url %>" height="300"/></p>
+<p><%= @scotch.tasting_notes %></p>
+<p>ABV <%= @scotch.abv %>%</p>
 <p></p>
 <h2>So <%= @user.name %>, what did you think?</h2>
 <form action="/add_review" method="post">
   <br>Rating (1 through 100)<br>
   <input type="text" name="rating">
-  <br><br>Your Review<br>
+  <br><br>Your Review<br><p><%= @errors %>
   <textarea name="review" cols=40 rows=4>
 </textarea><br><br>
 <input type="submit" value="Add Review"></form>
