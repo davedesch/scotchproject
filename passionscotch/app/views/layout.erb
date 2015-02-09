@@ -23,9 +23,13 @@
   <header>
     <nav class="vertical"><div class="buttons_not_named_logout">
       <a href="/reviews"><button>View All Scotches</button></a>
-      <a href="/<%= @user.username %>"><button>My Reviews</button></a>
-      <a href="/<%= @user.username %>/wishlist"><button>Wishlist</button></a></div>
+      <a href="/wishlist"><button>View Your Wishlist</button></a>
+      <a href="/user" %><button>View Your Reviews</button></a>
+<% if logged_in? %>
+  <a href="/login"><button>Login</button></a>
+  <% else %>
       <div class="logout_button"><a href="/logout"><button>Logout</button></a></div>
+  <% end %>
     </nav>
   </header>
   <%= yield %>
